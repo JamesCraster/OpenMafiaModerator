@@ -6,14 +6,6 @@ import logo from "./logo.svg";
 class Join extends Component {
   render() {
     return (
-      <div
-        style={{
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
         <div
           style={{
             textAlign: "center",
@@ -22,7 +14,7 @@ class Join extends Component {
             marginRight: "auto",
           }}
         >
-          <Link to="/"><Icon style={{fontSize:"30px"}} name="arrow alternate circle left outline"></Icon></Link>
+          <Link to="/"><Icon style={{fontSize:"30px", marginTop:"20px"}} name="arrow alternate circle left outline"></Icon></Link>
           <Header as="h1" dividing>
             {" "}
             Join Game
@@ -38,13 +30,21 @@ class Join extends Component {
               />
             </Form.Field>
             <Form.Field>
-              <Link to="game"><Button basic color="black">
+              <Input
+                style={{maxWidth:"500px"}}
+                icon="user"
+                iconPosition="left"
+                placeholder="Enter your nickname"
+                maxLength="20"
+              />
+            </Form.Field>
+            <Form.Field>
+              <Link to="player"><Button basic color="black">
                 Join Game
               </Button></Link>
             </Form.Field>
           </Form>
         </div>
-      </div>
     );
   }
 }

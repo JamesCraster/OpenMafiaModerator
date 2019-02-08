@@ -9,6 +9,7 @@ import {
 import Home from "./Home.jsx";
 import Host from "./Host.jsx";
 import Join from "./Join.jsx";
+import Player from "./Player.jsx";
 import Game from "./Game.jsx";
 
 import * as serviceWorker from "./serviceWorker";
@@ -18,6 +19,7 @@ const router = (<Router>
         <Route exact path="/" component={Home}/>
         <Route path="/host" component={Host}/>
         <Route path="/join" component={Join}/>
+        <Route path="/player" component={Player}/>
         <Route path="/game" component={Game}/>
     </div>
 </Router>);
